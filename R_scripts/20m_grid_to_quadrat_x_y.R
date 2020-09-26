@@ -9,5 +9,5 @@ serc.df <- as.data.frame(serc)
 serc.df.short <- serc.df %>% 
   select(PLOT,STAKE_X, STAKE_Y) 
 names(serc.df.short) <-  c('quadrat','x','y')
-write.csv(serc.df.short, 'quadrat.coords.csv',quote=F)
+write.csv(serc.df.short, 'spatial_data/quadrat.coords.csv',quote=F)
 
